@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Almarai-Regular";
+  src: url("fonts/Almarai-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Almarai-Bold";
+    src: url("fonts/Almarai-Bold.ttf");
+}
+
+* {
+      font-family: "Almarai-Regular";
+ }
+
+h1 {
+  font-family: "Almarai-Bold";
+}
+
+button {
+  font-family: "Almarai-Bold";
+}
+
+body {
+  background-color: #013E4B;
+}
+
+hr {
+  height: 2px !important;
+}
+
+.card__section--skewed, .card__section--straight {
+  background-color: #225762;
+  color: white;
+  border-radius: 0;
+}
+.card-1 {
+  margin: 40px 0;
+  transition: all 200ms;
+  display: flex;
+  position: relative;
+}
+.card__section--straight {
+    width: 1500px;
+    padding: 40px 0px;
+}
+.card__section--skewed {
+    z-index: -1;
+    padding: 0px 0px 0px;
+    transform: skewX(9deg);
+    position: relative;
+    right: 71px;
+    width: 500px;
+}
+
+.card-2 {
+  transition: all 200ms;
+  display: flex;
+  position: absolute;
+}
+.card__section--skewed2, .card__section--straight2 {
+  background-color: #BAC4AE;
+  color: white;
+  border-radius: 0;
+}
+.card__section--straight2 {
+    width: 160px;
+    height: 968px;
+}
+.card__section--skewed2 {
+    z-index: -1;
+    padding: 0px 0px 0px;
+    transform: skewX(9deg);
+    position: relative;
+    right: -80px;
+    width: 160px;
+}
+
+@media only screen and (min-width : 992px) {
+  .disable-classes {
+    position: relative;
+    right: 100px;
+    top: 50px;
+  }
+}
+
+.btn {
+    border-radius: 25px;
+    width: 130px;
+    border: 0;
+    transition: 0.3s;
+    background-color: #BAC4AE;
+    color: #225762;
+}
+.btn:hover {
+  background-color: #808877;
+  color: white;
+  transition: 0.3s;
+}
+
+.form-control {
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #75949b;
+  padding: 11px 25px;
+  background-color: #225762;
+}
+
+.form-check-input {
+  background-color: #225762 !important;
+  border: 2px solid #75949b !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #abbfc3 !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #abbfc3 !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #abbfc3 !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #abbfc3 !important;
+}
+
+.terms:hover {
+  cursor: pointer;
+}
+
+.form-check-input {
+  background-color: #F2F2F2;
+  border: 0;
+}
+.btn-outline-light:hover h1 {
+  color: #fff;
+}
+.btn-outline-light.active h1 {
+  color: #fff;
+}
